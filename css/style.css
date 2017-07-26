@@ -1,0 +1,44 @@
+html,
+body { font-family: Arial, sans-serif; 
+     height: 100%; margin: 0; 
+     padding: 0; overflow-x:hidden; }
+
+#container { height: 100%; width: 100%; display: table; }
+
+#options-box { background: #fff;
+height: 100%; line-height: 35px; padding: 10px 10px 30px 10px;
+text-align: left; width: 250px; display: table-cell; 
+padding: 0; background-color: #181818; }
+
+#Name { color: #999; font-size: 18px;
+margin: 10px 5px; text-align: center; }
+
+
+#options-box input {height: 28px; width: 70%; margin-left: 2px; }
+
+#options-box button {height: 35px; width: 25%; cursor:pointer; }
+
+#options-box ul { list-style-type: none; margin: 0; padding: 0; }
+
+#weatherP { color: #999; font-size: 12px; line-height: 2em; text-align: center; }
+
+a:link,a:visited { display: block; color: #999; font-size: 15px;
+background-color: #181818; text-align: left;
+padding: 2px 10px; text-decoration: none; text-transform: uppercase; }
+
+a:hover,a:active { background-color: #104008; }
+
+#mainpage { display:table-cell; margin: 0; padding: 0; }
+
+#hamburger-menu { background-color: #181818; height: 40px;
+position: absolute; width: 100%; }
+
+.btn-menu{ right: 0; width: 40px; height: 40px; margin: 0; padding: 8px; cursor:pointer; 
+border: none; border-radius: 0; background-color: #181818 }
+
+.btn-toggle:hover{ background-color: #104008 }
+
+.line{ margin: 3px; border-bottom: 3px solid #fff; box-shadow: 1px 1px #000 }
+
+#map { width: 100%; position: absolute; top: 40px; bottom: 0px; }
+
