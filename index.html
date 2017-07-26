@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- 为了让页面以正常比例进行显示并且禁止用户缩放页面的操作。 -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>neighborhood map</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+        <!-- 布局界面 -->
+    <div id="container">
+      <div id="options-box">
+        <p id="Name">GuangZhou University City</p>
+        <div>
+          <input  type="text" data-bind="value: inputStr" placeholder="例：中山大学">
+          <button data-bind="click: filterClick">Filter</button>
+        </div>
+        <ul data-bind="foreach: titleList">
+            <li data-bind="click: function(){$root.bounceMarker($data), $root.openInfowindow($data);}">
+            	<a href="#" data-bind="text: $data"></a>
+            </li>
+        </ul>
+        <div id="weather"></div>
+      </div>
+      <div id="mainpage">
+      <div id="hamburger-menu">
+          <button id="btn-menu" class="txt btn-menu btn-toggle" data-bind="click: slideToggle">
+            <p class="line"></p>
+            <p class="line"></p>
+            <p class="line"></p>
+          </button>
+      </div>
+
+      <div id="map"></div>
+      </div>
+    </div>
+
+    <script src="js/lib/jquery-3.2.1.js"></script>
+
+    <script src="js/lib/knockout-3.4.2.js"></script>
+
+    
+    
+    <script type="text/javascript">
+    
+    </script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script async defer
+     src="http://maps.google.cn/maps/api/js?v=3&key=AIzaSyCT5Ege0ZC3bPdRmnhvn5ITKPfF5gjusqs&callback=initMap" onerror="googleMapErrorHandler()">
+   </script>
+</body>
+</html>
