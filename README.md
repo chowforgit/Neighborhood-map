@@ -1,6 +1,6 @@
 # 如何运行这个项目
-下载项目，然后用浏览器打开index.html。
-
+- 下载项目，然后用浏览器打开index.html。
+- 或者点击以下网址 https://chowforgit.github.io/Neighborhood-map/
 
 
 # 项目概述 
